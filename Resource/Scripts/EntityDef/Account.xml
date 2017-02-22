@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root>	
+	<Attributes>
+		<AccountName	type="STRING"		flags="01 1110" default="TEstName"/>
+		<AccountName2	type="INT"			flags="01 1110" default="1234"/>
+		
+		<testDict		type="FIXED_DICT"	flags="01 1110">
+			<level	type="LEVEL"	flags="01 1110" default="0"/>
+			<pkmode type="PKMODE"	flags="01 1110" default="0"/>
+			<posX	type="F32"		flags="01 1110" default="0.0"/>
+			<posY	type="F32"		flags="01 1110" default="0.0"/>
+			<posZ	type="F32"		flags="01 1110" default="0.0"/>
+		</testDict>
+	</Attributes>
+	
+	<Methods>
+		<Client>
+			<craete_avatar_fail>
+				<reason type="STRING"/>
+			</craete_avatar_fail>
+
+			<start_game_fail>
+				<reason	type="STRING"/>
+			</start_game_fail>
+		</Client>
+		<Base>
+			<create_avatar>
+				<avatarName	type="STRING"/>
+				<vocation	type="INT32"/>
+			</create_avatar>
+			
+			<start_game>
+				<avatarName	type="STRING"/>
+			</start_game>
+		</Base>
+	</Methods>
+</root>
+
+

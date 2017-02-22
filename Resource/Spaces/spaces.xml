@@ -1,0 +1,7 @@
+<root>
+	<Spaces>
+		<Space name="Space_main" 		id="0" isMain="true" 	maxChannel="2" 		maxCell="2"/>
+		<Space name="Space_copy_1"  id="1" isMain="false" maxChannel="1000" maxCell="1"/>
+		<Space name="Space_copy_2"  id="2" isMain="false" maxChannel="1000" maxCell="1"/>
+	</Spaces>
+</root>

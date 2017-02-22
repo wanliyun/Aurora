@@ -1,0 +1,11 @@
+<root>
+	<Client>
+		<Account EntityType="Avatar"/>
+		<PublicKey path="Client/login_pub.key"/>
+		<LoginApps>
+			<LoginApp addr="192.168.177.1" port = "5030"/>
+			<LoginApp addr="192.168.177.1" port = "5031"/>
+			<LoginApp addr="192.168.177.1" port = "5032"/>
+		</LoginApps>
+	</Client>
+</root>

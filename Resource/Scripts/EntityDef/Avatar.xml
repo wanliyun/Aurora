@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root>
+	<Parents>
+		<Parent path="Interface/MoveAble"/>
+		<Parent path="Interface/Global"/>
+	</Parents>
+	
+	<Attributes>
+		<AvatarID 		type="INT32" 	flags="01 1110" default="0"/>
+		<Name			type="STRING" 	flags="01 1110" default="好啊!"/>
+	</Attributes>
+	
+	<Methods>
+		<Client>
+			<echoBack>
+				<test type="INT32"/>
+			</echoBack>
+			<echoBack2>
+				<test type="INT64"/>
+			</echoBack2>
+			<client_haha >
+				<arg1 type="INT32"/>
+				<arg2 type="INT32"/>
+				<arg3 type="INT32"/>
+			</client_haha>
+		</Client>
+		<Base>
+			<login>
+				<arg1 type="INT32"/>
+			</login>
+			<echo>
+				<arg2 type="INT32"/>
+			</echo>
+
+			<base_haha>
+				<arg1 type="INT16"/>
+				<arg2 type="INT32"/>
+			</base_haha>
+			
+			<base_haha2 exposed="false">
+				<arg1 type="INT32"/>
+				<arg2 type="INT32"/>
+				<arg3 type="INT32"/>
+				<arg4 type="INT32"/>
+				<arg5 type="INT32"/>
+				<arg6 type="INT32"/>
+			</base_haha2>
+			<base_haha3>
+				<arg1 type="INT16"/>
+				<arg2 type="INT32"/>
+			</base_haha3>
+		</Base>
+		<Cell>
+			<haha>
+				<arg1 type="INT32"/>
+				<arg2 type="INT32"/>
+				<arg3 type="INT32"/>
+			</haha>
+			<cell_haha>
+				<arg type="INT8"/>
+				<arg1 type="INT32"/>
+			</cell_haha>
+			<test_pos_rot_sync>
+			</test_pos_rot_sync>
+		</Cell>
+	</Methods>
+</root>
+
+

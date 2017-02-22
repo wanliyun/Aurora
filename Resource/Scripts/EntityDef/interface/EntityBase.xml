@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root>
+	<Attributes>
+		<id type="UINT32" flags="01 1110"/>
+	</Attributes>
+	<Methods>
+		<Client>
+			<echoBack3>
+				<test type="INT32"/>
+			</echoBack3>
+		</Client>
+		<Base>
+		</Base>
+		<Cell>
+			
+		</Cell>
+	</Methods>
+</root>

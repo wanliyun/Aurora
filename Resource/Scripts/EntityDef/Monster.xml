@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root>
+	<Parents>
+		<Parent path="interface/MoveAble"/>
+		<Parent path="interface/Global"/>
+	</Parents>
+	
+	<Methods>
+		<Client>
+			
+		</Client>
+		<Base>
+			
+		</Base>
+		<Cell>
+			
+		</Cell>
+	</Methods>
+</root>
+
+

@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{18ad9d46-1cc1-4760-8062-b0892e45819a}</ProjectGuid>
+    <ProjectHome />
+    <StartupFile>Main.py</StartupFile>
+    <SearchPath />
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <InterpreterId>{8db97088-e9b4-4708-80c0-7a6d4a252c31}</InterpreterId>
+    <InterpreterVersion>3.3</InterpreterVersion>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <IsWindowsApplication>True</IsWindowsApplication>
+    <LaunchProvider>Standard Python launcher</LaunchProvider>
+    <CommandLineArguments />
+    <InterpreterPath />
+    <InterpreterArguments />
+    <EnableNativeCodeDebugging>False</EnableNativeCodeDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <ItemGroup>
+    <Compile Include="Account.py" />
+    <Compile Include="Avatar.py" />
+    <Compile Include="Context.py" />
+    <Compile Include="Main.py" />
+    <Compile Include="Monster.py" />
+    <Compile Include="NPC.py" />
+    <Compile Include="RunTime.py" />
+    <Compile Include="StateMachine\State_Base.py" />
+    <Compile Include="StateMachine\State_Failed.py" />
+    <Compile Include="StateMachine\State_Init.py" />
+    <Compile Include="StateMachine\State_Login.py" />
+    <Compile Include="StateMachine\State_Running.py" />
+    <Compile Include="StateMachine\__init__.py" />
+    <Compile Include="Viewer\InputBox.py" />
+    <Compile Include="Viewer\View_Avatar.py" />
+    <Compile Include="Viewer\View_Entity.py" />
+    <Compile Include="Viewer\__init__.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="StateMachine\" />
+    <Folder Include="Viewer\" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterpreterReference Include="{2af0f10d-7135-4994-9156-5d01c9c11b7e}\3.3" />
+    <InterpreterReference Include="{8db97088-e9b4-4708-80c0-7a6d4a252c31}\3.3" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" />
+</Project>

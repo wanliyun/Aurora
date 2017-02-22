@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root>
+	<Attributes>
+		<test_global type="INT32" flags="01 1110"/>
+	</Attributes>
+	<Methods>
+		<Client>
+		</Client>
+		<Base>
+		</Base>
+		<Cell>
+			
+		</Cell>
+	</Methods>
+</root>

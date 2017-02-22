@@ -1,0 +1,62 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "Client", "Client\Client.pyproj", "{18AD9D46-1CC1-4760-8062-B0892E45819A}"
+EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "Base", "Base\Base.pyproj", "{9CBA10E4-62AC-4B46-9A59-0E29FED2DF45}"
+EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "Cell", "Cell\Cell.pyproj", "{2F7A4D72-E102-4591-8E5C-7F065FB5EE26}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "EntityDef", "EntityDef", "{E9CF40E5-75A0-47F7-A81F-54CD3FC4A572}"
+	ProjectSection(SolutionItems) = preProject
+		EntityDef\_dataTypes.xml = EntityDef\_dataTypes.xml
+		EntityDef\_Entities.xml = EntityDef\_Entities.xml
+		EntityDef\Account.xml = EntityDef\Account.xml
+		EntityDef\Avatar.xml = EntityDef\Avatar.xml
+		EntityDef\Monster.xml = EntityDef\Monster.xml
+		EntityDef\NPC.xml = EntityDef\NPC.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "interface", "interface", "{CAF47AB3-397C-4301-AF3B-E250832A5CB6}"
+	ProjectSection(SolutionItems) = preProject
+		EntityDef\interface\EntityBase.xml = EntityDef\interface\EntityBase.xml
+		EntityDef\interface\Global.xml = EntityDef\interface\Global.xml
+		EntityDef\interface\MoveAble.xml = EntityDef\interface\MoveAble.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Config_Client", "Config_Client", "{792ED1DB-BE64-446F-84D4-22D5BA3C62B0}"
+	ProjectSection(SolutionItems) = preProject
+		..\Client\ClientConfig.xml = ..\Client\ClientConfig.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Config_Server", "Config_Server", "{872DCE3A-254C-4EF8-8BCC-7776EA24C345}"
+	ProjectSection(SolutionItems) = preProject
+		..\Server\ServerConfig.xml = ..\Server\ServerConfig.xml
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{18AD9D46-1CC1-4760-8062-B0892E45819A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18AD9D46-1CC1-4760-8062-B0892E45819A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18AD9D46-1CC1-4760-8062-B0892E45819A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18AD9D46-1CC1-4760-8062-B0892E45819A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9CBA10E4-62AC-4B46-9A59-0E29FED2DF45}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9CBA10E4-62AC-4B46-9A59-0E29FED2DF45}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9CBA10E4-62AC-4B46-9A59-0E29FED2DF45}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9CBA10E4-62AC-4B46-9A59-0E29FED2DF45}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F7A4D72-E102-4591-8E5C-7F065FB5EE26}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F7A4D72-E102-4591-8E5C-7F065FB5EE26}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F7A4D72-E102-4591-8E5C-7F065FB5EE26}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F7A4D72-E102-4591-8E5C-7F065FB5EE26}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{CAF47AB3-397C-4301-AF3B-E250832A5CB6} = {E9CF40E5-75A0-47F7-A81F-54CD3FC4A572}
+	EndGlobalSection
+EndGlobal

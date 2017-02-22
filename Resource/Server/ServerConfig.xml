@@ -1,0 +1,48 @@
+<root>
+	<AppManager>
+		<listen  internBind="1" externBind="0" />
+		<internBindAddrs>
+			<bindAddr addr="192.168.177.1" port = "5020"/>
+		</internBindAddrs>
+	</AppManager>
+	<LoginApp>
+		<PrivateKey path="Server/login.key"/>
+		<listen  internBind="0" externBind="1" />
+		<externBindAddrs>
+			<bindAddr addr="192.168.177.1" port = "5030"/>
+			<bindAddr addr="192.168.177.1" port = "5031"/>
+			<bindAddr addr="192.168.177.1" port = "5032"/>
+		</externBindAddrs>
+		<AppMgr	addr="192.168.177.1" port = "5020"/>
+	</LoginApp>
+	<BaseApp>
+		<DBConnStr str="host=192.168.177.128 port=5432 dbname=test user=postgres password=123456 connect_timeout=10" />
+		
+		<listen  internBind="1" externBind="1" />
+		<internBindAddrs>
+			<bindAddr addr="192.168.177.1" port = "5040"/>
+			<bindAddr addr="192.168.177.1" port = "5041"/>
+			<bindAddr addr="192.168.177.1" port = "5042"/>
+		</internBindAddrs>
+		
+		<externBindAddrs>
+			<bindAddr addr="192.168.177.1" port = "5045"/>
+			<bindAddr addr="192.168.177.1" port = "5046"/>
+			<bindAddr addr="192.168.177.1" port = "5047"/>
+		</externBindAddrs>
+		<AppMgr	addr="192.168.177.1" port = "5020"/>
+	</BaseApp>
+	<CellApp>
+		<listen  internBind="1" externBind="0" />
+		<internBindAddrs>
+			<bindAddr addr="192.168.177.1" port = "5050"/>
+			<bindAddr addr="192.168.177.1" port = "5051"/>
+			<bindAddr addr="192.168.177.1" port = "5052"/>
+		</internBindAddrs>
+		<AppMgr	addr="192.168.177.1" port = "5020"/>
+	</CellApp>
+	<DBManager>
+		<listen  internBind="0" externBind="0" />
+		<AppMgr	addr="192.168.177.1" port = "5020"/>
+	</DBManager>
+</root>

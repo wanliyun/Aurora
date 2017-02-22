@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root>
+	<alias>
+		<INT>INT32</INT>
+		<LEVEL>UINT8</LEVEL>
+		<PKMODE>UINT8</PKMODE>
+	</alias>
+	
+	<typeDefine>
+		<Person type="FIXED_DICT" flags="01 1110">
+			<level	type="LEVEL"/>
+			<pkmode type="PKMODE"/>
+			<posX	type="F32" default="0.0"/>
+			<posY	type="F32" default="0.0"/>
+			<posZ	type="F32" default="0.0"/>
+		</Person>
+
+		<Item type="FIXED_DICT" flags="01 1110">
+			<AvatarID 		type="INT32" 	flags="01 1110" default="0"/>
+			<Name 			type="STRING" 	flags="01 1110" default="好啊!"/>
+			<attr1	 		type="INT8" 	flags="01 1110" default="100"/>
+			<attr2	 		type="INT16" 	flags="01 1111" default="1000"/>
+			<attr3	 		type="INT32" 	flags="01 1110" default="1000"/>
+			<attr4	 		type="UINT32" 	flags="01 1110" default="4294967295"/>
+			<attr5	 		type="INT64" 	flags="01 1110" default="922337203685477580"/>
+			<attr6	 		type="UINT64" 	flags="01 1110" default="18446744073709551615"/>
+			<attr7	 		type="F32" 		flags="01 1110" default="0.1234567891234567"/>
+			<attr8	 		type="F64" 		flags="01 1110" default="0.1234567891234567"/>
+		</Item>
+	</typeDefine>
+</root>
